@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Code Editor Style</title>
+    <link rel="stylesheet" href="array.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Fun Coding</a>
+        <nav class="navbar">
+            <a href="bubble.html">Bubble Sort</a>
+            <a href="start.html">Start</a>
+            <a href="cin.html">Cin & Datatype</a>
+            <a href="array.html">Array</a>
+            <a href="loop.html">Loop</a>
+            <a href="if.html">if/else</a>
+            <a href="easy.html">easy boxing</a>
+            <div class="cancel-btn">
+                <i class="fas fa-times"></i>
+            </div>
+        </nav>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="teach">
+        <div class="title"><span>Array</span></div>
+        <div class="text">
+            <p>剛剛我們用 scanf 輸入四個數字作排序的元素，然而，如果是輸入四個單獨的變數的話，要怎麼實現當前面數字大於後面數字時，兩者位置前後交換的動作呢？ 這正是這單元要介紹的新語法，陣列。</p>
+        </div>
+            <div class="list">
+                <span class="program-1">1</span>
+                <span class="code" >資料型別 陣列名稱[索引值];</span>
+            </div>
+            <div class="content-3">
+                <p>陣列是一個資料集合，能將相同型別的元素放在一起。與一開始說的變數不同，一個變數只能存取一個數值，但陣列不同，一個陣列可以存取兩個以上且相同型別的數值。</p>
+            </div>
+           
+            <div class="code-editor">
+                <div class="text-animation-1">
+                    <span class="program-1">1</span>
+                    <span class="code">int n[ 3 ] = { 1 , 2 , 3 }; <span class="font-context">// n[0]=1; n[1]=2; n[2]=3;</span> </span>
+                </div>
+            </div>
+            <div class="content-2">
+                <ul class="array_explain">
+                    <li>[ ] 裡的數字代表陣列的容量。</li>
+                    <hr class="hr_style"/>    
+                    <li>如果要將數值放進陣列裡，必須使用 { } 將全部數值括起來，數值間用 <span class="green">,</span> 區隔開。</li>
+                    <li>當索引值為 3 時，陣列的確存取了三個元素，但是編號卻是從 0 開始。</li>
+                </ul>
+            </div>
+
+            <div class="testBox">
+                <code class="CodeColor_1">#include ＜stdio.h＞</code>
+                <br>
+                <code  class="CodeColor_2">int</code> <code class="CodeColor_1">main(void){</code>
+                    
+                    <blockquote><code class="CodeColor_2"> // 改成box[4];</code></blockquote>
+                <blockquote><input type="text" name="text" size="40"; class="InputCode" id="array_1" value="int num_1, num_2, num_3, num_4;"></blockquote>
+
+                <code class="CodeColor_2"><blockquote>printf</code> <code class="CodeColor_1">("請輸入任意且互不相等的四個數字：");</blockquote></code>
+                <blockquote><code class="CodeColor_2"> // 用陣列的方式輸入值;</code></blockquote>
+                <blockquote><input type="text" name="text" size="50"; class="InputCode" id="array_2" value="scanf (&quot;%d%d%d%d&quot;,&num_1, &num_2, &num_3, &num_4); "></blockquote>
+
+                <code class="CodeColor_1"><blockquote>return 0;</blockquote></code>
+                
+                <code class="CodeColor_1">} </code>
+            </div>
+                <button type="button" id="ans_submit">提交</button>
+                <button type="button" id="look_ans">看答案</button>
+            </form>
+        </div>
+    </section>
+    
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+         const cancelBtn = document.querySelector('.cancel-btn');
+         const navbar = document.querySelector('.navbar');
+ 
+         menuBtn.onclick = function() {
+             menuBtn.style.opacity = "0";
+             menuBtn.style.pointerEvents = "none"; // 不會被滑鼠點擊
+             navbar.classList.add("active");
+         }
+ 
+         cancelBtn.onclick = function() {
+             menuBtn.style.opacity = "1";
+             menuBtn.style.pointerEvents = "auto";
+             navbar.classList.remove("active");
+         }
+ 
+         window.onscroll = function() {
+             if (document.documentElement.scrollTop > 20) {
+                 menuBtn.style.opacity = "0";
+                 menuBtn.style.pointerEvents = "none";
+                 navbar.classList.add("sticky");
+             } else {
+                 menuBtn.style.opacity = "1";
+                 menuBtn.style.pointerEvents = "auto";
+                 navbar.classList.remove("sticky");
+             }
+         }
+     </script>
+     <script src="array.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+let vid = document.getElementById("Control-video");
+vid.playbackRate = 0.5;
+
+let vid_2 = document.getElementById("Control-video-2");
+vid_2.playbackRate = 0.5;
+
+let vid_3 = document.getElementById("Control-video-3");
+vid_3.playbackRate = 0.5;

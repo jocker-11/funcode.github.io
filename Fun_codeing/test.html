@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">\
+    <link rel="stylesheet" href="test.css">
+    <style>
+        /* 将上面的 CSS 代码粘贴在这里 */
+    </style>
+    <title>Hamburger Menu Example</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Fun Coding</a>
+        <nav class="navbar">
+            <a href="bubble.html" target="_blank">Bubble Sort</a>
+            <a href="start.html">Start</a>
+            <a href="cin.html">Cin & Datatype</a>
+            <a href="#contact">Array</a>
+            <a href="#contact">Loop</a>
+            <a href="#contact">if/else</a>
+            <a href="#contact">easy boxing</a>
+        </nav>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+        </div>
+    </header>
+
+    <ol class="rounded-list">
+        <li><a href="">List item</a></li>
+        <li><a href="">List item</a></li>
+        <li><a href="">List item</a>
+          <ol>
+            <li><a href="">List sub item</a></li>
+            <li><a href="">List sub item</a></li>
+            <li><a href="">List sub item</a></li>
+          </ol>
+        </li>
+        <li><a href="">List item</a></li>
+        <li><a href="">List item</a></li>
+      </ol>
+    <script>
+      const menuBtn = document.querySelector('.menu-btn');
+      const cancelBtn = document.querySelector('.cancel-btn');
+      const navbar = document.querySelector('.navbar');
+  
+      menuBtn.addEventListener('click', () => {
+          navbar.classList.add('active');
+      });
+  
+      cancelBtn.addEventListener('click', () => {
+          navbar.classList.remove('active');
+      });
+  </script>
+  
+</body>
+</html>

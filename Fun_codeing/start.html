@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="start.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Fun Coding</a>
+        <nav class="navbar">
+            <a href="bubble.html">Bubble Sort</a>
+            <a href="start.html">Start</a>
+            <a href="cin.html">Cin & Datatype</a>
+            <a href="array.html">Array</a>
+            <a href="loop.html">Loop</a>
+            <a href="if.html">if/else</a>
+            <a href="easy.html">easy boxing</a>
+            <div class="cancel-btn">
+                <i class="fas fa-times"></i>
+            </div>
+        </nav>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <section class="teach">
+        <div class="title"><span>Start</span></div>
+            <div class="code-editor">
+                <div class="text-animation-1">
+                    <span class="program-1">1</span>
+                    <span class="code" >#include &lt;stdio.h&gt;</span>
+                </div>
+            </div>
+            <div class="content-1">
+                <p> 這叫做標頭檔，標頭檔有很多種，其中 ＜stdio.h＞ 是負責輸出與輸入的。</p>
+            </div>
+
+            <div class="code-editor">
+                <div class="text-animation-2">
+                    <span class="program-1">2</span>
+                    <span class="code">int main(void){ }</span>
+                </div>
+            </div>
+            <div class="content-2">
+                <p> 接下來你會看到 int main(void) 的程式碼，我們稱之為函式，main 是這個函式的名稱，也就是所謂的主函式。程式的執行內容大多都在函式裡完成的。 每當你的函式完成後，記得一定要用 { } 框住此函式的內容。到這裡，你只需要知道 int main(void) 與 #include ＜stdio.h＞ 是寫C語言的起手式即可。</p>
+            </div>
+
+            <div class="code-editor">
+                <div class="text-animation-3">
+                    <span class="program-1">3</span>
+                    <span class="code">printf ("Hello World！！");</span>
+                </div>
+            </div>
+            <div class="content-3">
+                <p> printf 就是輸出的意思，語法是把欲輸出的數值用 " " 包起來，就像我想輸出 Hello World！！，那我就把這段訊息用 " " 包住，最後的輸出結果也 正如我們所預期的一樣 >> Hello World！！</p>
+            </div>
+
+            <div class="code-editor">
+                <div class="text-animation-4">
+                    <span class="program-1">4</span>
+                <span class="code">return 0;</span>
+                </div>
+                
+            </div> 
+            <div class="content-4">
+                <p> return 0; 這代表一個函式的正常退出，在這裡不會去深入討論， 函式與傳回值的意思，如果有興趣的話，可以搜尋 C 語言函式，最後，寫完程式碼後一定要加上 }喔，到這裡，你已經了解 C 語言的標頭檔、main 函式與 printf 輸出瞜，準備好之後，可以點 NEXT，進入到下個單元，輸入與資料型別。</p>
+            </div>
+
+            <div class="testBox">
+                <input type="text" name="text" size="40" class="CommentText" id="fun_1" value="// 加上stdio.h標頭檔">
+                <br>
+                <input type="text" name="text" size="40" class="CommentText" id="fun_2" value="// 加上主函式main">
+                <blockquote><input type="text" name="text" size="40" class="CommentText" id="fun_3" value="// 輸出：請輸入任意且互不相等的四個數字："></blockquote>
+                <blockquote><input type="text" name="text" size="40" class="CommentText" id="fun_4" value="// 程式正常結束"></blockquote>
+                <input type="text" name="text" size="40" class="CommentText" id="fun_5" value="// 程式正常結束">
+                <br>
+            </div>
+            <div class="button">
+                <button type="button" id="ans_submit">提交</button>
+                <button type="button" id="look_ans">看答案</button>
+            </div>   
+                     
+    </section>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+         const cancelBtn = document.querySelector('.cancel-btn');
+         const navbar = document.querySelector('.navbar');
+ 
+         menuBtn.onclick = function() {
+             menuBtn.style.opacity = "0";
+             menuBtn.style.pointerEvents = "none"; // 不會被滑鼠點擊
+             navbar.classList.add("active");
+         }
+ 
+         cancelBtn.onclick = function() {
+             menuBtn.style.opacity = "1";
+             menuBtn.style.pointerEvents = "auto";
+             navbar.classList.remove("active");
+         }
+ 
+         window.onscroll = function() {
+             if (document.documentElement.scrollTop > 20) {
+                 menuBtn.style.opacity = "0";
+                 menuBtn.style.pointerEvents = "none";
+                 navbar.classList.add("sticky");
+             } else {
+                 menuBtn.style.opacity = "1";
+                 menuBtn.style.pointerEvents = "auto";
+                 navbar.classList.remove("sticky");
+             }
+         }
+     </script>
+     <script src="start.js"></script>
+</body>
+</html>

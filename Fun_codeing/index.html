@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Fun Coding</a>
+        <nav class="navbar">
+            <a href="bubble.html">Bubble Sort</a>
+            <a href="start.html">Start</a>
+            <a href="cin.html">Cin & Datatype</a>
+            <a href="array.html">Array</a>
+            <a href="loop.html">Loop</a>
+            <a href="if.htmls">if/else</a>
+            <a href="easy.html">easy boxing</a>
+            <div class="cancel-btn">
+                <i class="fas fa-times"></i>
+            </div>
+        </nav>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <div class="bubble">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="bubble">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <div class="bubble">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="bubble">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="bubble">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="bubble">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="bubble">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="bubble">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="bubble">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="bubble">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="bubble">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="bubble">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="bubble">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="bubble">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+         const cancelBtn = document.querySelector('.cancel-btn');
+         const navbar = document.querySelector('.navbar');
+ 
+         menuBtn.onclick = function() {
+             menuBtn.style.opacity = "0";
+             menuBtn.style.pointerEvents = "none"; // 不會被滑鼠點擊
+             navbar.classList.add("active");
+         }
+ 
+         cancelBtn.onclick = function() {
+             menuBtn.style.opacity = "1";
+             menuBtn.style.pointerEvents = "auto";
+             navbar.classList.remove("active");
+         }
+ 
+         window.onscroll = function() {
+             if (document.documentElement.scrollTop > 20) {
+                 menuBtn.style.opacity = "0";
+                 menuBtn.style.pointerEvents = "none";
+                 navbar.classList.add("sticky");
+             } else {
+                 menuBtn.style.opacity = "1";
+                 menuBtn.style.pointerEvents = "auto";
+                 navbar.classList.remove("sticky");
+             }
+         }
+     </script>
+</body>
+</html>

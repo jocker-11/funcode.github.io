@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Code Editor Style</title>
+    <link rel="stylesheet" href="if.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Fun Coding</a>
+        <nav class="navbar">
+            <a href="bubble.html">Bubble Sort</a>
+            <a href="start.html">Start</a>
+            <a href="cin.html">Cin & Datatype</a>
+            <a href="array.html">Array</a>
+            <a href="loop.html">Loop</a>
+            <a href="if.html">if/else</a>
+            <a href="easy.html">easy boxing</a>
+            <div class="cancel-btn">
+                <i class="fas fa-times"></i>
+            </div>
+        </nav>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="teach">
+        <div class="title"><span>if / else</span></div>
+        <div class="text">
+            <p>接下來要寫一個可以比較出數字大小的程式，這裡我們會使用到條件式</p>
+        </div>  
+            <div class="list">
+                <span class="program-1">1</span>
+                <span class="code" >if (A)
+                <br>
+                <span class="program-1">2</span>{ 
+                    <br>
+                    <span class="program-1">3</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>do something
+                    <br>
+                <span class="program-1">4</span>}
+                </span>
+            </div> 
+            <div class="content-2">
+                <p>A 是條件，只要滿足 A，就會執行框框內的指令</p>
+             </div>
+           
+            <div class="code-editor">
+                <div>
+                    <br>
+                    <span class="program-1">1</span>
+                    <span class="code">if ( 1 ＞ 0 )
+                        <br>
+                        <span class="program-1">2</span>{ 
+                            <br>
+                            <span class="program-1">3</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>printf ("Hello World！！\n");
+                            <br>
+                        <span class="program-1">4</span>}
+                    </span>
+                </div>
+            </div>
+           <div class="content-3">
+                <p>上面的例子是說：如果 1＞0 時，就輸出 Hello World！！，因為此事件成立， 所以結果是輸出 Hello World！！</p>
+           </div>
+
+           <div class="text">
+            <p>當條件有兩個時，我們會使用if / else</p>
+            </div>  
+            <div class="list">
+                <span class="program-1">1</span>
+                <span class="code" >if (A)
+                <br>
+                <span class="program-1">2</span>{ 
+                    <br>
+                    <span class="program-1">3</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>do something
+                    <br>
+                <span class="program-1">4</span>}
+                <br>
+                <span class="program-1">5</span>
+                <span class="code" >else
+                    <br>
+                    <span class="program-1">6</span>{ 
+                        <br>
+                        <span class="program-1">7</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>do another something
+                        <br>
+                    <span class="program-1">8</span>}
+                </span>
+            </div> 
+            <div class="content-2">
+                <p>當沒達成 A 條件時，程式就會執行 else 裏的指令</p>
+             </div>
+           
+            <div class="code-editor">
+                <div>
+                    <br>
+                    <span class="program-1">1</span>
+                    <span class="code">if ( 1 ＞ 2 )
+                        <br>
+                        <span class="program-1">2</span>{ 
+                            <br>
+                            <span class="program-1">3</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>printf ("不會出現這個\n");
+                            <br>
+                        <span class="program-1">4</span>}
+                    </span>
+                    <br>
+                    <span class="program-1">5</span>
+                    <span class="code">else
+                        <br>
+                        <span class="program-1">6</span>{ 
+                            <br>
+                            <span class="program-1">7</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>printf ("會出現這個\n");
+                            <br>
+                        <span class="program-1">8</span>}
+                    </span>
+                </div>
+            </div>
+           <div class="content-3">
+                <p>上面的例子：因為 if 裡的事件不成立，所以執行 else 裡的指令，你可以把這段程式碼放進編譯器執行看看喔</p>
+           </div>
+
+           <div class="text">
+            <p>當條件有兩個以上時，我們會使用 if / else if</p>
+            </div>  
+            <div class="list">
+                <span class="program-1">1</span>
+                <span class="code" >if (A)
+                <br>
+                <span class="program-1">2</span>{ 
+                    <br>
+                    <span class="program-1">3</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>do something
+                    <br>
+                <span class="program-1">4</span>}
+                <br>
+                <span class="program-1">5</span>
+                <span class="code" >else if (B)
+                    <br>
+                    <span class="program-1">6</span>{ 
+                        <br>
+                        <span class="program-1">7</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>do another something
+                        <br>
+                    <span class="program-1">8</span>}
+                </span><br>
+                <span class="program-1">9</span>
+                <span class="code" >else 
+                    <br>
+                    <span class="program-1">10</span>{ 
+                        <br>
+                        <span class="program-1">11</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>do last something
+                        <br>
+                    <span class="program-1">12</span>}
+                </span>
+            </div> 
+            <div class="content-2">
+                <p>如果不符合 A 條件，就走進 B ，如果 不符合 B ，那就進入 else 做 last something</p>
+             </div>
+           
+            <div class="code-editor">
+                <div>
+                    <br>
+                    <span class="program-1">1</span>
+                <span class="code" >if ( 4 == 4 )
+                <br>
+                <span class="program-1">2</span>{ 
+                    <br>
+                    <span class="program-1">3</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>printf ("會出現這個\n");
+                    <br>
+                <span class="program-1">4</span>}
+                <br>
+                <span class="program-1">5</span>
+                <span class="code" >else if ( 3 ＞ 2 ) 
+                    <br>
+                    <span class="program-1">6</span>{ 
+                        <br>
+                        <span class="program-1">7</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>printf ("即使這條件是對的，程式依舊會優先判斷事件是否滿足 if 條件喔\n");
+                        <br>
+                    <span class="program-1">8</span>}
+                </span><br>
+                <span class="program-1">9</span>
+                <span class="code" >else 
+                    <br>
+                    <span class="program-1">10</span>{ 
+                        <br>
+                        <span class="program-1">11</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>do last something
+                        <br>
+                    <span class="program-1">12</span>}
+                </span>
+                </div>
+            </div>
+           <div class="content-3">
+                <p>程式一律優先判斷 if 的條件，只要確定 if 條件成立，不管 else if 條件是否成立，程式會忽略 if 後面的判斷式，只執行 if 的事</p>
+           </div>
+
+            <div class="testBox">
+                <code class="CodeColor_1">#include ＜stdio.h＞</code>
+                <br>
+                <code  class="CodeColor_2">int</code> <code class="CodeColor_1">main(void){</code>
+                <blockquote>
+                    <code  class="CodeColor_2">int</code>
+                    <code  class="CodeColor_1">box[</code>
+                    <code  class="CodeColor_2">4</code>
+                    <code  class="CodeColor_1">], i, n ;</code>
+                </blockquote>
+                <code class="CodeColor_2"><blockquote>printf</code> <code class="CodeColor_1">("請輸入任意且互不相等的四個數字： \n") ;</blockquote></code>
+                <blockquote>
+                    <code  class="CodeColor_2">for</code>
+                    <code class="CodeColor_1">( i=</code>
+                    <code class="CodeColor_2">0</code>
+                    <code class="CodeColor_1">; </code>
+                    <code class="CodeColor_1">i＜</code>
+                    <code class="CodeColor_2">4</code>
+                    <code class="CodeColor_1">; </code>
+                    <code class="CodeColor_1">i</code>
+                    <code class="CodeColor_2">++</code>
+                    <code class="CodeColor_1">)</code>
+                    <code class="CodeColor_1">{</code>
+                </blockquote>
+                <blockquote><blockquote><code class="CodeColor_2">scanf</code> <code class="CodeColor_1">( "%d", &box[ i ] ) ;</code></blockquote></blockquote>
+                <blockquote><code class="CodeColor_1">}</code>
+                <br>
+                    <code  class="CodeColor_2">for</code>
+                    <code class="CodeColor_1">( i=</code>
+                    <code class="CodeColor_2">0</code>
+                    <code class="CodeColor_1">; </code>
+                    <code class="CodeColor_1">i＜</code>
+                    <code class="CodeColor_2">3</code>
+                    <code class="CodeColor_1">; </code>
+                    <code class="CodeColor_1">i</code>
+                    <code class="CodeColor_2">++</code>
+                    <code class="CodeColor_1">)</code>
+                    <code class="CodeColor_1">{</code>
+                <blockquote>
+                    <code  class="CodeColor_2">for</code>
+                    <code class="CodeColor_1">( n=</code>
+                    <code class="CodeColor_2">0</code>
+                    <code class="CodeColor_1">; </code>
+                    <code class="CodeColor_1">n＜</code>
+                    <code class="CodeColor_2">3</code>
+                    <code class="CodeColor_1">; </code>
+                    <code class="CodeColor_1">n</code>
+                    <code class="CodeColor_2">++</code>
+                    <code class="CodeColor_1">)</code>
+                    <code class="CodeColor_1">{</code>
+                </blockquote>
+                <blockquote><blockquote><input type="text" name="text" size="30"; class="CommentText" id="if_1" value="// if判斷式"></blockquote></blockquote>
+                <blockquote><blockquote><input type="text" name="text" size="30"; class="CommentText" id="if_2" value="// if的大括弧"></blockquote></blockquote>
+                <blockquote><code class="CodeColor_1">}</code></blockquote>
+                <code class="CodeColor_1">}</code>
+                <br>
+                <code class="CodeColor_1">return 0;</code>
+                <br>
+                <code class="CodeColor_1">} </code>
+            </div>
+                <button type="button" id="ans_submit">提交</button>
+                <button type="button" id="look_ans">看答案</button>
+    </section>
+    
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+         const cancelBtn = document.querySelector('.cancel-btn');
+         const navbar = document.querySelector('.navbar');
+ 
+         menuBtn.onclick = function() {
+             menuBtn.style.opacity = "0";
+             menuBtn.style.pointerEvents = "none"; // 不會被滑鼠點擊
+             navbar.classList.add("active");
+         }
+ 
+         cancelBtn.onclick = function() {
+             menuBtn.style.opacity = "1";
+             menuBtn.style.pointerEvents = "auto";
+             navbar.classList.remove("active");
+         }
+ 
+         window.onscroll = function() {
+             if (document.documentElement.scrollTop > 20) {
+                 menuBtn.style.opacity = "0";
+                 menuBtn.style.pointerEvents = "none";
+                 navbar.classList.add("sticky");
+             } else {
+                 menuBtn.style.opacity = "1";
+                 menuBtn.style.pointerEvents = "auto";
+                 navbar.classList.remove("sticky");
+             }
+         }
+     </script>
+     <script src="if.js"></script>
+</body>
+</html>

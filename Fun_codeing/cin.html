@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Code Editor Style</title>
+    <link rel="stylesheet" href="cin.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Fun Coding</a>
+        <nav class="navbar">
+            <a href="bubble.html">Bubble Sort</a>
+            <a href="start.html">Start</a>
+            <a href="cin.html">Cin & Datatype</a>
+            <a href="array.html">Array</a>
+            <a href="loop.html">Loop</a>
+            <a href="if.html">if/else</a>
+            <a href="easy.html">easy boxing</a>
+            <div class="cancel-btn">
+                <i class="fas fa-times"></i>
+            </div>
+        </nav>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="teach">
+        <div class="title"><span>Datatype</span></div>
+            <div class="list">
+                <span class="program-1">1</span>
+                <span class="code" >int 整數型別的名稱=整數;</span>
+                <br>
+                <span class="program-1">2</span>
+                <span class="code" >float 浮點數型別的名稱=小數;</span>
+                <br>
+                <span class="program-1">3</span>
+                <span class="code" >char 字元型別的名稱=字元;</span>
+            </div>
+            <div class="content-3">
+                <p>當然，除了輸出一些文字以外，你還可以讓電腦進行一些運算，再把結果輸出，而在運算的過程中， 我們會使用變數來將一些數值儲存起來，且每個變數都有各自的資料型態，在輸出形式也有所不同，但不用擔心， 下面我會整理基本的三個變數的資料型態，和說明如何用 printf 輸出變數。</p>
+            </div>
+           
+            <div class="code-editor">
+                <div class="text-animation-1">
+                    <span class="program-1">1</span>
+                    <span class="code" >int num_1 = 5; <span class="font-context">// 所以現在num為5</span></span>
+                </div>
+            </div>
+            <div class="content-2">
+                <p>說明一下，這裡的" = "，不是數學的相等，而是賦予的意思，舉一個例子，若我要宣告一個叫 num、值為 5 的整數變數，用程式的寫法為：</p>
+            </div>
+
+            <div class="code-editor">
+                <div class="text-animation-2">
+                    <span class="program-1">2</span>
+                    <span class="code">float float_1 = 8.2; <span class="font-context">// 所以現在num_2為8.2</span></span>
+                </div>
+            </div>
+            <div class="content-2">
+                <p> 宣告浮點數變數的句法，浮點數就是有小數點的數。</p>
+            </div>
+
+            <div class="code-editor">
+                <div class="text-animation-3">
+                    <span class="program-1">3</span>
+                    <span class="code">char char_1 = 'A'; <span class="font-context">// 所以現在 num_1 為 A</span></span>
+                </div>
+            </div>
+            <div class="content-2">
+                <p> 宣告字元變數的句法，要注意一點是，若要賦予字元變數值時，要用 ' ' 單引號框住該值。</p>
+            </div>
+
+            <div class="title"><span>Cin & Cout</span></div>
+            <div class="list">
+                <span class="program-1">1</span>
+                <span class="code" >printf ("%d",num_1);</span>
+                <br>
+                <span class="program-1">2</span>
+                <span class="code" >printf ("%f",float_1);</span>
+                <br>
+                <span class="program-1">3</span>
+                <span class="code" >printf ("%c",char_1);</span>
+            </div>
+            <div class="content-2">
+                <p>如果想要將上面的變數讓電腦輸出的話，會使用 printf，搭配輸出每個資料型態所需使用的格式說明符進行輸出。</p>
+            </div>
+            <div class="list">
+                <span class="program-1">1</span>
+                <span class="code" >int x,y;</span>
+                <br>
+                <span class="program-1">2</span>
+                <span class="code" >scanf ("%d%d", &x,&y);</span>
+                <br>
+            </div>
+            <div class="content-2">
+                <p>跟輸出一樣，加上不同型別的格式說明符和變數名稱就可以了。上述輸入整數 x 和 y </p>
+            </div>
+
+            <div class="testBox">
+                <code class="CodeColor_1">#include &lt;stdio.h&gt;</code>
+                <br>
+                <code class="CodeColor_2">int</code> <code class="CodeColor_1">main(void) {</code>
+            
+                <blockquote>
+                    <input type="text" name="text" size="40" class="CommentText" id="input_1" value="// 宣告 num_1, num_2, num_3, num_4">
+                </blockquote>
+            
+                <code class="CodeColor_2"><blockquote>printf</code> <code class="CodeColor_1">("請輸入任意且互不相等的四個數字：");</blockquote></code>
+            
+                <blockquote>
+                    <input type="text" name="text" size="40" class="CommentText" id="input_2" value="// 將四個變數做輸入的動作">
+                </blockquote>
+            
+                <code class="CodeColor_1"><blockquote>return 0;</blockquote></code>
+                
+                <code class="CodeColor_1">}</code>
+            </div>
+                <button type="button" id="ans_submit">提交</button>
+                <button type="button" id="look_ans">看答案</button>
+            </div>   
+    </section>
+    
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+         const cancelBtn = document.querySelector('.cancel-btn');
+         const navbar = document.querySelector('.navbar');
+ 
+         menuBtn.onclick = function() {
+             menuBtn.style.opacity = "0";
+             menuBtn.style.pointerEvents = "none"; // 不會被滑鼠點擊
+             navbar.classList.add("active");
+         }
+ 
+         cancelBtn.onclick = function() {
+             menuBtn.style.opacity = "1";
+             menuBtn.style.pointerEvents = "auto";
+             navbar.classList.remove("active");
+         }
+ 
+         window.onscroll = function() {
+             if (document.documentElement.scrollTop > 20) {
+                 menuBtn.style.opacity = "0";
+                 menuBtn.style.pointerEvents = "none";
+                 navbar.classList.add("sticky");
+             } else {
+                 menuBtn.style.opacity = "1";
+                 menuBtn.style.pointerEvents = "auto";
+                 navbar.classList.remove("sticky");
+             }
+         }
+     </script>
+
+     <script src="cin.js"></script>
+</body>
+</html>

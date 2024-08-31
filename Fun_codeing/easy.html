@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Code Editor Style</title>
+    <link rel="stylesheet" href="easy.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Fun Coding</a>
+        <nav class="navbar">
+            <a href="bubble.html">Bubble Sort</a>
+            <a href="start.html">Start</a>
+            <a href="cin.html">Cin & Datatype</a>
+            <a href="array.html">Array</a>
+            <a href="loop.html">Loop</a>
+            <a href="if.html">if/else</a>
+            <a href="easy.html">easy boxing</a>
+            <div class="cancel-btn">
+                <i class="fas fa-times"></i>
+            </div>
+        </nav>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="teach">
+        <div class="title"><span>Easy Box</span></div>
+           
+            <div class="content-2">
+                <ul class="array_explain">
+                    <li>首先，在 int 那邊加上 y 變數</li>
+                    <li>然後回到 if 的 { } 裡</li>
+                    <li>如果前者數值>後者數值，也就是 box[n] > box[n+1] 時，那我就必須讓 box[n] 和 box[n+1] 裡的數值都先取出來， 再把 box[n] 的放進 box[n+1] 裡、把 box[n+1] 的放進 box[n] 裡。</li>
+                    <li>這時就會用到 y 了，你把 y 想成是一個暫時借放的暫存器，你可以把從 box 裡取出的數值借放到 y 裡面</li>
+                    <li>先把 box[n+1] 的值借放進 y 裡 >> y=box[n+1] </li>
+                    <li>把 box[n] 的值放進 box[n+1] 裡 >> box[n+1]=box[n] ;</li>
+                    <li>最後，再把借放在 y 裡的數值放入 box[n] 裡 >> box[n]=y ;</li>
+                </ul>
+            </div>
+
+            <div class="testBox">
+                <div class="example_code">
+                    <code class="CodeColor_1">#include ＜stdio.h＞</code>
+                    <br>
+                    <code  class="CodeColor_2">int</code> <code class="CodeColor_1">main(void){</code>
+                    <blockquote>
+                        <code  class="CodeColor_2">int</code>
+                        <code  class="CodeColor_1">box[</code>
+                        <code  class="CodeColor_2">4</code>
+                        <code  class="CodeColor_1">], i, n, </code>
+                        <input type="text" name="text" size="20";  class="CommentText" id="box_1" value="// 加上變數 y ">
+                    </blockquote>
+                    <code class="CodeColor_2"><blockquote>printf</code> <code class="CodeColor_1">("請輸入任意且互不相等的四個數字： \n") ;</blockquote></code>
+                    <blockquote>
+                        <code  class="CodeColor_2">for</code>
+                        <code class="CodeColor_1">( i=</code>
+                        <code class="CodeColor_2">0</code>
+                        <code class="CodeColor_1">; </code>
+                        <code class="CodeColor_1">i＜</code>
+                        <code class="CodeColor_2">4</code>
+                        <code class="CodeColor_1">; </code>
+                        <code class="CodeColor_1">i</code>
+                        <code class="CodeColor_2">++</code>
+                        <code class="CodeColor_1">)</code>
+                        <code class="CodeColor_1">{</code>
+                    </blockquote>
+                    <!--for ( i= 0 ; i＜ 4 ; i ++ ) {-->
+                    <blockquote><blockquote><code class="CodeColor_2">scanf</code> <code class="CodeColor_1">( "%d", &box[ i ] ) ;</code></blockquote></blockquote>
+                    <blockquote><code class="CodeColor_1">}</code>
+                    <br>
+                        <code  class="CodeColor_2">for</code>
+                        <code class="CodeColor_1">( i=</code>
+                        <code class="CodeColor_2">0</code>
+                        <code class="CodeColor_1">; </code>
+                        <code class="CodeColor_1">i＜</code>
+                        <code class="CodeColor_2">3</code>
+                        <code class="CodeColor_1">; </code>
+                        <code class="CodeColor_1">i</code>
+                        <code class="CodeColor_2">++</code>
+                        <code class="CodeColor_1">)</code>
+                        <code class="CodeColor_1">{</code>
+                    <blockquote>
+                        <!--for ( i= 0 ; i＜ 3 ; i ++ ) {-->
+
+                        <code  class="CodeColor_2">for</code>
+                        <code class="CodeColor_1">( n=</code>
+                        <code class="CodeColor_2">0</code>
+                        <code class="CodeColor_1">; </code>
+                        <code class="CodeColor_1">n＜</code>
+                        <code class="CodeColor_2">3</code>
+                        <code class="CodeColor_1">; </code>
+                        <code class="CodeColor_1">n</code>
+                        <code class="CodeColor_2">++</code>
+                        <code class="CodeColor_1">)</code>
+                        <code class="CodeColor_1">{</code>
+                    </blockquote>
+                        <!--for ( n= 0 ; n＜ 3 ; n ++ ) {-->
+
+                    <blockquote><blockquote> 
+                        <code  class="CodeColor_2">if</code>
+                        <code class="CodeColor_1">( </code>
+                        <code  class="CodeColor_1">box[</code>
+                        <code  class="CodeColor_2">n</code>
+                        <code  class="CodeColor_1">]＞</code>
+                        <code  class="CodeColor_1">box[ </code>
+                        <code  class="CodeColor_2">n+1</code>
+                        <code  class="CodeColor_1"> ]</code>
+                        <code  class="CodeColor_1">) {</code>
+                            <blockquote>
+                                <input type="text" name="text" size="30"; class="CommentText" id="box_2" value="// 簡易打包的部分"><br>
+                                <input type="text" name="text" size="30"; class="CommentText" id="box_3" value="// 簡易打包的部分"><br>
+                                <input type="text" name="text" size="30"; class="CommentText" id="box_4" value="// 簡易打包的部分">
+                            </blockquote>
+                        <code class="CodeColor_1">}</code>
+                    </blockquote></blockquote>
+                    <!--if ( box[ n ]＞ box[ n+1 ] ) {-->
+
+                    <blockquote><code class="CodeColor_1">}</code></blockquote>
+                    <code class="CodeColor_1">}</code>
+                    <br>
+                        <code  class="CodeColor_2">for</code>
+                        <code class="CodeColor_1">( i=</code>
+                        <code class="CodeColor_2">0</code>
+                        <code class="CodeColor_1">; </code>
+                        <code class="CodeColor_1">i＜</code>
+                        <code class="CodeColor_2">4</code>
+                        <code class="CodeColor_1">; </code>
+                        <code class="CodeColor_1">i</code>
+                        <code class="CodeColor_2">++</code>
+                        <code class="CodeColor_1">)</code>
+                        <code class="CodeColor_1">{</code>
+                    <blockquote><input type="text" name="text" size="30"; class="CommentText" id="box_5" value="// 輸出排序完的結果"></blockquote>
+                    <code class="CodeColor_1">}</code>
+                    <br>
+                    <!--for ( i= 0 ; i＜ 4 ; i ++ ) {-->
+                    <code class="CodeColor_1">return 0;</code>
+                    <br>
+                    <code class="CodeColor_1">} </code>
+                </div>
+            </div>
+                    <button type="button" id="ans_submit">提交</button>
+                    <button type="button" id="look_ans">看答案</button>
+    </section>
+    
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+         const cancelBtn = document.querySelector('.cancel-btn');
+         const navbar = document.querySelector('.navbar');
+ 
+         menuBtn.onclick = function() {
+             menuBtn.style.opacity = "0";
+             menuBtn.style.pointerEvents = "none"; // 不會被滑鼠點擊
+             navbar.classList.add("active");
+         }
+ 
+         cancelBtn.onclick = function() {
+             menuBtn.style.opacity = "1";
+             menuBtn.style.pointerEvents = "auto";
+             navbar.classList.remove("active");
+         }
+ 
+         window.onscroll = function() {
+             if (document.documentElement.scrollTop > 20) {
+                 menuBtn.style.opacity = "0";
+                 menuBtn.style.pointerEvents = "none";
+                 navbar.classList.add("sticky");
+             } else {
+                 menuBtn.style.opacity = "1";
+                 menuBtn.style.pointerEvents = "auto";
+                 navbar.classList.remove("sticky");
+             }
+         }
+     </script>
+     <script src="easy.js"></script>
+</body>
+</html>

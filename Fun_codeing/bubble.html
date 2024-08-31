@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="bubble.css">
+    <title>Bubble</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Fun Coding</a>
+        <nav class="navbar">
+            <a href="bubble.html">Bubble Sort</a>
+            <a href="start.html">Start</a>
+            <a href="cin.html">Cin & Datatype</a>
+            <a href="array.html">Array</a>
+            <a href="loop.html">Loop</a>
+            <a href="if.html">if/else</a>
+            <a href="easy.html">easy boxing</a>
+            <div class="cancel-btn">
+                <i class="fas fa-times"></i>
+            </div>
+        </nav>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    
+    
+
+    <section class="bubble">
+        <div class="content">
+            <div class="title"><span>Bubble Sort</span></div>
+            <div class="text">
+                <p>將含有 N 個數字的數列，進行由小到大的排序，數字兩兩依序互相比較，如果前者數值>後者數值，則前後數值順序交換，共做 N-1 回合。</p>
+            </div>
+            <div class="teach">
+                <div class="video-left">
+                    <video id="Control-video" src="video/ami_1.mp4" autoplay muted loop ></video>
+                </div>
+                <div class="content-right">
+                    <p>Round 1</p>
+                    <ul class="content-li">
+                        <li>8與3比較，因為8>3，所以8和3前後交換，變成【 3 8 2 1 】</li>
+                        <li>8與2比較，因為8>2，所以8和2前後交換，變成【 3 2 8 1 】</li>
+                        <li>8與1比較，因為8>1，所以8和1前後交換，變成【 3 2 1 8 】</li>
+                        <li>第一輪的排序為【 3 8 2 1 】</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="teach">
+                <div class="video-left">
+                    <video id="Control-video-2" src="video/ani_2.mp4" autoplay muted loop ></video>
+                </div>
+                <div class="content-right">
+                    <p>Round 2</p>
+                    <ul class="content-li">
+                        <li>3與2比較，因為3>2 ，所以3和2前後交換，變成【 2 3 1 8 】</li>
+                        <li>8與2比較，因為8>2，所以8和2前後交換，變成【 3 2 8 1 】</li>
+                        <li>3與1比較，因為3>1 ，所以3和1前後交換，變成【 2 1 3 8 】</li>
+                        <li>第二輪的排序為【 2 1 3 8 】</li>
+                </div>
+            </div>
+
+            <div class="teach">
+                <div class="video-left">
+                    <video id="Control-video-3" src="video/ani_3.mp4" autoplay muted loop ></video>
+                </div>
+                <div class="content-right">
+                    <p>Round 3</p>
+                    <ul class="content-li">
+                        <li>2與1比較，因為2>1，所以2和1前後交換，變成【 1 2 3 8 】</li>
+                        <li>2與3比較，因為2＜3，所以2和3順序不變，維持【 1 2 3 8 】</li>
+                        <li>2與8比較，因為2＜8，所以2和8順序不變，維持【 1 2 3 8 】</li>
+                        <li>第三輪的排序為【 1 2 3 8 】</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+       const menuBtn = document.querySelector('.menu-btn');
+        const cancelBtn = document.querySelector('.cancel-btn');
+        const navbar = document.querySelector('.navbar');
+
+        menuBtn.onclick = function() {
+            menuBtn.style.opacity = "0";
+            menuBtn.style.pointerEvents = "none"; // 不會被滑鼠點擊
+            navbar.classList.add("active");
+        }
+
+        cancelBtn.onclick = function() {
+            menuBtn.style.opacity = "1";
+            menuBtn.style.pointerEvents = "auto";
+            navbar.classList.remove("active");
+        }
+
+        let nav = document.querySelector("nav");
+        let val;
+        window.onscroll = function() {
+            if (document.documentElement.scrollTop > 20) {
+                menuBtn.style.opacity = "0";
+                menuBtn.style.pointerEvents = "none";
+                nav.classList.add("sticky");
+            } else {
+                menuBtn.style.opacity = "1";
+                menuBtn.style.pointerEvents = "auto";
+                nav.classList.remove("sticky");
+            }
+        }
+    </script>
+    <script src=" video-speed"></script>
+</body>
+</html>
